@@ -8,6 +8,7 @@ import CreateUserScreen from './screens/CreateUserScreen';
 import ClientListScreen from './screens/ClientListScreen';
 import CreateClientScreen from './screens/CreateClientScreen';
 import UpdateClientScreen from './screens/UpdateClientScreen';
+import CreateOrderScreen from './screens/orders/CreateOrder';
 
 const Stack = createNativeStackNavigator();
 
@@ -46,6 +47,11 @@ export default function App() {
             name="UpdateClient"
             component={UpdateClientScreen}
             options={{ title: 'Actualizar Cliente' }}
+          />
+          <Stack.Screen
+            name="CreateOrder"
+            component={CreateOrderScreen}
+            options={{ title: 'Crear Orden' }}
           />
         </Stack.Navigator>
       </NavigationContainer>
