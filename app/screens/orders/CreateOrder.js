@@ -8,7 +8,7 @@ const { services, garments } = constants;
 const defaultGarment = {
   type: garments[0],
   description: '',
-  observations: '',
+  observations: '', 
   services: [{ ...services[0] }],
 };
 
